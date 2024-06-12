@@ -33,6 +33,7 @@ router.patch(
 
 router.get("/", jwtCheck, jwtParse, MyRestaurantController.getMyRestaurant);
 
+// /api/my/restaurant
 router.post(
   "/",
   //使用 Multer 处理上传的单个名为 imageFile 的文件
